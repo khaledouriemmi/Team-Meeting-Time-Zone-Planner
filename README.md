@@ -2,6 +2,11 @@
 
 A web-based tool to help plan meetings across different time zones. This tool makes it easy to find overlapping working hours between team members in different parts of the world.
 
+## Author
+
+**Khaled Ouriemmi**
+- GitHub: [@khaledouriemmi](https://github.com/khaledouriemmi)
+
 ## Features
 
 - Search and add cities by IANA time zone identifiers
@@ -28,3 +33,14 @@ A web-based tool to help plan meetings across different time zones. This tool ma
 ## Local Development
 
 Simply open `time_zone_meeting_planner_index.html` in a web browser. No build process or server required.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Credits
+
+- Developed by Khaled Ouriemmi
+- Time zone calculations powered by the native `Intl.DateTimeFormat` API
+- UI/UX design inspired by modern web application patterns
+- Special thanks to the open-source community for inspiration and best practices
