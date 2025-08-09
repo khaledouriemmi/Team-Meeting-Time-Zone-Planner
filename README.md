@@ -34,6 +34,14 @@ A web-based tool to help plan meetings across different time zones. This tool ma
 
 Simply open `time_zone_meeting_planner_index.html` in a web browser. No build process or server required.
 
+## Credits
+
+Created and maintained by [Khaled Ouriemmi](https://github.com/khaledouriemmi)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
