@@ -2,6 +2,10 @@
 
 A web-based tool to help plan meetings across different time zones. This tool makes it easy to find overlapping working hours between team members in different parts of the world.
 
+## Online Version
+The project is already deployed for people who want to use it directly with no editing
+- https://meeting-time-zone-planner.vercel.app/
+
 ## Author
 
 **Khaled Ouriemmi**
