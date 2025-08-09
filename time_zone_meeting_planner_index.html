@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Time‑Zone Meeting Planner</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Time‑Zone Meeting Planner</h1>
+        <div class="sub">Pick cities → see local hours side‑by‑side → find green overlap to book your call.</div>
+      </div>
+    </header>
+
+    <section class="panel">
+      <div class="controls">
+        <div class="left">
+          <input id="tzSearch" type="text" placeholder="Search a city or IANA zone (e.g., Europe/Paris)" autocomplete="off" />
+          <select id="tzSelect"></select>
+          <button id="addBtn">Add city</button>
+          <span class="sub">Work hours: <input id="startHour" type="number" min="0" max="23" value="9" />–<input id="endHour" type="number" min="1" max="24" value="17" /> (local)</span>
+        </div>
+        <div class="right">
+          <button id="shareBtn" title="Copy a link with your current selection">Share</button>
+          <button id="clearBtn" title="Remove all cities">Clear</button>
+        </div>
+      </div>
+      <div style="padding: 0 16px 8px">
+        <div id="chips" style="display:flex; gap:8px; flex-wrap: wrap"></div>
+      </div>
+
+      <div class="gridWrap">
+        <div id="grid" class="grid"></div>
+      </div>
+
+      <div class="legend">
+        <span><span class="swatch work"></span> Working hours</span>
+        <span><span class="swatch overlap"></span> Overlap across all cities</span>
+        <span><span class="swatch now"></span> Current local hour</span>
+      </div>
+
+      <div class="footer">
+        <span>Fully client‑side. Time math via <code>Intl.DateTimeFormat</code> — no API keys.</span>
+        <a class="linkish" href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank" rel="noreferrer">IANA time zones</a>
+      </div>
+    </section>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
